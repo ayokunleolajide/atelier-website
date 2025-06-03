@@ -4,150 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Serviced accommodation for contractors in East London. Comfortable, clean, and fully equipped homes.">
-<meta name="author" content="Atelier London Living">
-
+  <meta name="author" content="Atelier London Living">
   <title>Atelier London Living</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      background-color: #fdfdfd;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #ffffff;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #eaeaea;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #111;
-    }
-    header p {
-      color: #666;
-      margin-top: 0.5rem;
-    }
-    .container {
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .section {
-      margin-bottom: 3rem;
-    }
-    .section h2 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-      color: #222;
-    }
-    .section p {
-      color: #555;
-      max-width: 800px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-      align-items: stretch;
-    }
-    .gallery img {
-      width: 100%;
-      height: 250px;
-      border-radius: 12px;
-      object-fit: cover;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-    .highlight {
-      background-color: #fff;
-      padding: 2rem;
-      border: 1px solid #eee;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-      margin-bottom: 3rem;
-    }
-    .highlight h3 {
-      margin-bottom: 1rem;
-      color: #111;
-    }
-    .highlight ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-      color: #555;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .cta button {
-      background-color: #111;
-      color: #fff;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-    .cta button:hover {
-      background-color: #444;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      margin-top: 2rem;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Atelier London Living</h1>
-    <p><p>Your trusted accommodation partner for contractors and professionals in East London.</p>
-</p>
+<body class="bg-white text-gray-800 font-[Inter]">
+  <header class="bg-white py-10 border-b border-gray-200 text-center">
+    <h1 class="text-4xl font-semibold text-gray-900">Atelier London Living</h1>
+    <p class="text-lg text-gray-600 mt-2">Your trusted accommodation partner for contractors and professionals in East London.</p>
   </header>
 
-  <div class="container">
-    <div class="section">
-      <h2>Stylish & Comfortable Living Spaces</h2>
-      <p>Whether you're a contractor, corporate guest, or relocating family, Atelier London Living provides fully furnished homes designed for comfort, convenience, and longer stays. All of our accommodations are located within easy reach of transport links and key business districts.</p>
-    </div>
+  <main class="max-w-7xl mx-auto px-4 py-12">
+    <section class="mb-12 text-center">
+      <h2 class="text-2xl font-semibold mb-4">Stylish & Comfortable Living Spaces</h2>
+      <p class="max-w-2xl mx-auto text-gray-600">Whether you're a contractor, corporate guest, or relocating family, Atelier London Living provides fully furnished homes designed for comfort, convenience, and longer stays.</p>
+    </section>
 
-    <div class="section gallery">
-      <img src="images/Living Room.jpg" alt="Living Room">
-      <img src="images/Kitchen.jpg" alt="Kitchen">
-      <img src="images/Bedroom.jpg" alt="Bedroom">
-      <img src="images/Bathroom.jpg" alt="Bathroom">
-    </div>
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+      <img src="images/Living Room.jpg" alt="Living Room" class="w-full h-60 object-cover rounded-xl shadow">
+      <img src="images/Kitchen.jpg" alt="Kitchen" class="w-full h-60 object-cover rounded-xl shadow">
+      <img src="images/Bedroom.jpg" alt="Bedroom" class="w-full h-60 object-cover rounded-xl shadow">
+      <img src="images/Bathroom.jpg" alt="Bathroom" class="w-full h-60 object-cover rounded-xl shadow">
+      <img src="images/Garden.jpg" alt="Garden" class="w-full h-60 object-cover rounded-xl shadow">
+      <img src="images/Exterior.jpg" alt="Front View" class="w-full h-60 object-cover rounded-xl shadow">
+    </section>
 
-    <div class="section highlight">
-      <h3>Why Stay With Us?</h3>
-      <ul>
+    <section class="bg-gray-50 p-8 rounded-xl shadow mb-12">
+      <h3 class="text-xl font-semibold mb-4 text-gray-900">Why Stay With Us?</h3>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
         <li>Flexible short- and long-term stays</li>
         <li>Fully equipped kitchens and homely essentials</li>
         <li>Professionally cleaned and maintained</li>
         <li>Free Wi-Fi, smart TVs and workspace-friendly areas</li>
         <li>Ideal for contractors, professionals, and relocators</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="cta">
-      <h2>Make an Enquiry</h2>
-      <p>We’d love to hear from you — whether you're looking for a place to stay or you'd like to list your property with us.</p>
-      <button onclick="document.getElementById('form').scrollIntoView({behavior: 'smooth'})">Enquire Now</button>
-    </div>
+    <section class="text-center mb-12">
+      <h2 class="text-2xl font-semibold mb-4">What Our Guests Say</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="italic text-gray-600">"Perfect for our team — clean, quiet, and close to our site in Stratford."</p>
+          <p class="mt-4 font-medium">– Liam M., Contractor</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="italic text-gray-600">"Spacious, modern, and very convenient. Highly recommend Atelier!"</p>
+          <p class="mt-4 font-medium">– Emma J., Site Supervisor</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="italic text-gray-600">"The whole team loved the layout and the host was great!"</p>
+          <p class="mt-4 font-medium">– Tony A., Engineer</p>
+        </div>
+      </div>
+    </section>
 
-    <div id="form">
-      <iframe src="https://tally.so/r/wLNjKv" loading="lazy"></iframe>
-    </div>
-  </div>
-  <footer><p>&copy; 2025 Atelier London Living. All rights reserved.</p>
-</footer>
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-center mb-4">Our Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9933.727269962896!2d0.0801306!3d51.5409579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a72f52e0a8ff%3A0xa063dfe3739053c!2sBarking%2C%20UK!5e0!3m2!1sen!2suk!4v1717338451230!5m2!1sen!2suk"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-2xl font-semibold mb-4">Make an Enquiry</h2>
+      <p class="text-gray-600 mb-6">We’d love to hear from you — whether you're looking for a place to stay or you'd like to list your property with us.</p>
+      <button onclick="document.getElementById('form').scrollIntoView({behavior: 'smooth'})" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">Enquire Now</button>
+    </section>
+
+    <section id="form" class="mt-10">
+      <iframe src="https://tally.so/r/wLNjKv" loading="lazy" class="w-full h-[600px] border-0"></iframe>
+    </section>
+  </main>
+
+  <footer class="text-center py-6 border-t text-sm text-gray-500">
+    &copy; 2025 Atelier London Living. All rights reserved.
+  </footer>
 </body>
 </html>
